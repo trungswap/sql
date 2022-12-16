@@ -109,7 +109,7 @@ where left (productCode, 3) = 'S10'
 select p.productCode, count(o.productCode) countDetails from products p left join orderdetails o 
 on p.productCode = o.productCode 
 group by p.productCode 
-order by countDetails desc 
+order by countDetails asc 
 limit 11
 
 -- 21
